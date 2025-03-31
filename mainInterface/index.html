@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Saksham Singhal</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./style/main.css" />
+    <link rel="stylesheet" type="text/css" href="./style/table.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="icon" href="./image/icon1.png" />
+  </head>
+
+  <body onload="myFunction()">
+    <div class="content">
+      <div class="title">
+        <p class="name">Portfolio</p>
+      </div>
+      <div class="navigation">
+        <div class="nav-link active">
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-link"><a href="./experience.html">Experience</a></div>
+        <div class="nav-link">
+          <a href="./project-archive.html">Project Archive</a>
+        </div>
+        <div class="nav-link"><a href="./education.html">Education</a></div>
+        <div class="nav-link"><a href="./featured.html">Skills</a></div>
+        <div class="nav-link">
+          <a href="./miscellaneous.html">Coding Profile</a>
+        </div>
+        <div class="nav-link"><a href="./contact.html">Contact</a></div>
+      </div> 
+      <div class="det-area">
+        <div class="text-area">
+          <p class="page-home-name">Saksham's Portfolio</p>
+
+          <p class="page-home">
+            <img
+              src="./image/ghibli.png"
+              alt="alt text"
+              style="float: right; padding: 22px 0px 10px 10px"
+              width="160px"
+              id="profile"
+              onClick="changeImage()"
+              class="multi-img"
+            />
+            <br />
+            👋 Hey there! I'm Saksham, a full-stack web developer, graphic designer, and proficient programmer in various languages.
+            <br><br>
+            🎓 Currently pursuing Computer Science at NIT Patna, I enjoy exploring the latest technologies and dabbling in Development.
+            <br><br>
+            🏆 With a solid background in web development and CS fundamentals, I've achieved a 9.2 CGPA and honed my skills in C, C++, Python, JavaScript, MERN-stack, MySQL, Linux.
+            <br><br>
+            💻 I bring to the table elegant, scalable code, great project management abilities, and a collaborative spirit.
+            <br><br>
+            🚀 My current goals are to to collaborate on exciting projects and contribute to innovative solutions.
+
+            <!-- Outside of tech, I’m big on hiking and mountain biking. One of my favorite moments so far was finishing the Ha Ling trail in Alberta and exploring 50+ other challenging trails. -->
+			  <br /><br />
+            Feel free to connect via email
+            <a href="mailto:skshmsinghal.3@gmail.com">skshmsinghal.3@gmail.com</a>.
+            <br />
+            <br />
+            <!-- <br /> -->
+            <button id="btn" class="accordion" onclick="openResume()">Resume</button>
+            <br />
+            <br />
+            <br />
+            
+            <button id="btn" class="accordion" onclick="openTerminal()">Open in Terminal (TRY IT 😀)</button>
+			  <!-- This site was last updated on: <span id="lastupdatetime"></span> -->
+          </p>
+        </div>
+      </div>
+      <div class="foot">
+        <a href="mailto:skshmsinghal.3@gmail.com"
+          ><i class="fa fa-envelope-o" style="font-size: 23px"></i
+        ></a>
+        &nbsp;&nbsp;<a href="https://github.com/Saksham-3114"
+          ><i class="fa fa-github" style="font-size: 23px"></i
+        ></a>
+        &nbsp;&nbsp;<a href="https://www.linkedin.com/in/sakshamsinghal3/"
+          ><i class="fa fa-linkedin" style="font-size: 23px"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+  <script language="javascript">
+    //simple but amazing
+    var images = [
+      // "./image/garfield.webp",
+      "./image/ghibli.png",
+      // "./image/ghibli2.png",
+    ];
+    var i = 0;
+    function changeImage() {
+      i = (i+1)%images.length;
+      document.getElementById("profile").src = images[i];
+    }
+  </script>
+	
+  <script>
+    function myFunction() {
+      var x = document.lastModified;
+      document.getElementById("lastupdatetime").innerHTML = x;
+    }
+  </script>
+  <script>
+    function openResume(){
+      window.open("https://drive.google.com/file/d/1I-fGZxkI-pF6NQ80qa2Ypy5MRaWv-Z9Y/view?usp=sharing", "_blank");
+    }
+  </script>
+</html>

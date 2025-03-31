@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #666666;
+	background-color:#e9d8a6;
+}
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;}
+
+.content{
+  margin: 0 auto 0 auto; 
+  display: table; 
+  height: 100%;  
+  position: relative; 
+  overflow: hidden; 
+  background-color: #FFFFFF;
+  width: auto;
+  box-shadow: 0px 5px 30px 1px grey;
+}
+
+.title{
+	position:relative;
+	text-align: center;
+	width: 100%;
+	height:100px;
+	margin-left:0px;
+	margin-right:0px;
+	color: white;
+	background-color: #83c5be;
+}
+
+.name{
+position:relative;
+	text-align: center;
+padding: 35px 0px 20px 0px;
+font-family: 'Press Start 2P', cursive;
+font-size:28px;
+font-weight:bold;
+}
+
+.navigation a {
+	color: white;
+	text-decoration: none;
+}
+.nav-link{
+	height:30px;
+	width: 130px;
+	text-align:center;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-top: 10px;
+	background-color: #006d77;
+
+	
+}
+
+.nav-link:hover{
+	background-color: #83c5be;
+}
+
+#btn{
+	font-weight:bold;
+}
+
+.active{
+	background-color: #83c5be;
+}
+
+.det-area{
+	width: 780px;
+	height:600px;
+}
+
+.text-area{
+	overflow: auto;
+	height: 540px;
+	width:auto;
+	padding: 10px;
+	color: #343a40;
+}
+
+.text-area a{
+	color: #006d77;
+	text-decoration: none;
+}
+
+.text-area a:hover{
+	color: #83c5be;
+}
+
+.foot{
+	width: auto;
+	height:30px;
+	background-color: #343a40;
+text-align:center;
+padding: 10px 0px 7px 0px;
+}
+
+.foot a{
+	color: white;
+}
+
+.foot a:hover{
+	color: #48cae4;
+}
+
+.page-title{
+	text-align: center;
+	padding: 10px 0px;
+	font-size: 20px;
+}
+
+.blog{
+	padding: 10px 25px;
+}
+
+.blog ul li{
+	padding: 10px 0px;
+}
+
+.page-det{
+	text-align: left;
+	padding: 10px 0px;
+}
+
+.page-home{
+	text-align: justify;
+	padding: 10px 25px 10px 25px;
+}
+
+.page-home-name{
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	padding: 10px 0px;
+	font-size: 20px;
+}
+
+.email{
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+
+.email a{
+	color: #006d77;
+	text-decoration: none;
+}
+
+.email a:hover{
+	color: #83c5be;
+}
+
+.media{
+	padding: 120px 0px 10px 0px;
+	text-align: center;
+}
+
+.media a{
+	color: #006d77;
+	text-decoration: none;
+}
+
+.media a:hover{
+	color: #83c5be;
+}
+
+.location{
+	padding: 10px 0px;
+	text-align: center;
+}
+
+.misc{
+	padding: 10px 50px;
+}
+
+.archived{
+	text-align: center;
+	padding: 8px 0px;
+	display: block;
+	color: #461220;
+	background: #b23a48;
+	border: 1px solid #461220;
+	border-radius: 25px;
+}
+
+.multi-img{
+	cursor: pointer;
+}
+
+
+
+
+
+.accordion {
+  background-color: #006d77;
+	border: 1px solid #006d77;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  float: left;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+}
+
+.active, .accordion:hover {
+  background-color: #83c5be; 
+}
+
+.panel {
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  padding: 6px 12px;
+  border: 1px solid #006d77;
+  border-top: none;
+}
+
+/* Windows 95 Style Box */
+.win95-box {
+	width: 650px;
+	background: #c0c0c0;
+	border: 3px solid #808080;
+	box-shadow: inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+	font-family: "MS Sans Serif", sans-serif;
+	margin: 20px auto;
+	padding: 8px;
+  }
+  
+  /* Title Bar */
+  .win95-title-bar {
+	background: navy;
+	color: white;
+	padding: 4px 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 14px;
+  }
+  
+  .win95-close {
+	background: #c0c0c0;
+	border: 2px solid #808080;
+	width: 20px;
+	height: 20px;
+	font-size: 14px;
+	margin: 0 ;
+	padding: 0;
+	text-align: center;
+	cursor: pointer;
+  }
+  
+  /* Content Styling */
+  .win95-content {
+	padding: 10px;
+  }
+  
+  .win95-icon {
+	width: 20px;
+	vertical-align: middle;
+	margin-right: 5px;
+  }
+  
+  /* Windows 95 Buttons */
+  .win95-buttons {
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  .win95-btn {
+	background: #c0c0c0;
+	border: 2px solid #808080;
+	box-shadow: inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+	font-family: "MS Sans Serif", sans-serif;
+	padding: 4px 12px;
+	cursor: pointer;
+	margin: 5px;
+  }
+  
+  .win95-btn:hover {
+	background: #a0a0a0;
+  }
+  
+#projecttab{
+	/* display: flex; */
+	/* justify-content: space-evenly; */
+	/* text-align: end; */
+	/* align-items: flex-start; */
+}
+
+#more{
+	margin: 0px 0px 0px 469px;
+	height: 48px;
+}
